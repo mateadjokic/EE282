@@ -11,7 +11,7 @@ wget https://ftp.flybase.net/releases/FB2022_05/dmel_r6.48/gtf/dmel-all-r6.48.gt
 
 wget https://ftp.flybase.net/releases/FB2022_05/dmel_r6.48/gtf/md5sum.txt
 
-md5sum -c <(grep all-chrom md5sum.txt)
+md5sum -c <(grep dmel md5sum.txt)
 
 bioawk -c gff '{print$feature}' dmel-all-r6.48.gtf.gz | sort | uniq -c | sort -k1n
 
