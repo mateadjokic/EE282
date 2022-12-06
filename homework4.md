@@ -30,8 +30,10 @@ There were a total of 6,178,042 nucleotides, 662,593 Ns, and 1,863 sequences inc
 Filtered files from the previous section were exported into RStudio. In RStudio, I log transformed the data to visualize the distribution of sequence lengths for small and large sequences using the `hist()` function. Refer to the hw4_genome_summary.sh file for the R Script used.
 
 ![Figure 1: Large sequence length distribution > 100kb](https://github.com/mateadjokic/ee282/blob/homework4/output/figures/Dmel_large_seq_length.png?raw=true)
+*Figure 1: Large sequence length distribution > 100kb*
 
 ![Figure 2: Small sequence length distribution ≤ 100kb](https://github.com/mateadjokic/ee282/blob/homework4/output/figures/Dmel_small_seq_length.png?raw=true)
+*Figure 2: Small sequence length distribution ≤ 100kb*
 
 #### 2. Sequence GC% distribution. Use a histogram!
 
