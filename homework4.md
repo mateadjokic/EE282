@@ -30,10 +30,12 @@ There were a total of 6,178,042 nucleotides, 662,593 Ns, and 1,863 sequences inc
 Filtered files from the previous section were exported into RStudio. In RStudio, I log transformed the data to visualize the distribution of sequence lengths for small and large sequences using the `hist()` function. Refer to the hw4_genome_summary.sh file for the R Script used.
 
 ![Figure 1: Large sequence length distribution > 100kb](https://github.com/mateadjokic/ee282/blob/homework4/output/figures/Dmel_large_seq_length.png?raw=true)
-*Figure 1: Large sequence length distribution > 100kb*
+
+**Figure 1: Large sequence length distribution > 100kb.**
 
 ![Figure 2: Small sequence length distribution ≤ 100kb](https://github.com/mateadjokic/ee282/blob/homework4/output/figures/Dmel_small_seq_length.png?raw=true)
-*Figure 2: Small sequence length distribution ≤ 100kb*
+
+**Figure 2: Small sequence length distribution ≤ 100kb.**
 
 #### 2. Sequence GC% distribution. Use a histogram!
 
@@ -41,7 +43,11 @@ To determine percent GC, `bioawk` was used and the output file was imported into
 
 ![Figure 3: Large sequence GC% distribution > 100kb](https://github.com/mateadjokic/ee282/blob/homework4/output/figures/FinalGCLargeHW4.png?raw=true)
 
+**Figure 3: Large sequence GC% distribution > 100kb.**
+
 ![Figure 4: Small sequence GC% distribution ≤ 100kb](https://github.com/mateadjokic/ee282/blob/homework4/output/figures/FinalGCSmallHW4.png?raw=true)
+
+**Figure 4: Small sequence GC% distribution ≤ 100kb.**
 
 #### 3. Cumulative sequence size sorted from largest to smallest sequences.
 
@@ -49,7 +55,11 @@ Cumulative sequence size was visualized using the `plotCDF2` function in the con
 
 ![Figure 5: Cumulative sequence size for large sequences  > 100kb](https://github.com/mateadjokic/ee282/blob/homework4/output/figures/CDFLarge.png?raw=true)
 
+**Figure 5: Cumulative sequence size for large sequences  > 100kb.**
+
 ![Figure 6: Cumulative sequence size for small sequences ≤ 100kb](https://github.com/mateadjokic/ee282/blob/homework4/output/figures/CDFSmallUpdated.png?raw=true)
+
+**Figure 6: Cumulative sequence size for small sequences ≤ 100kb.**
 
 ## Genome assembly
 ### Assemble a genome from MinION reads
@@ -76,6 +86,7 @@ I used `faSplitByN` to derive the contig assembly from the scaffold assembly fro
 
 ![Figure 7: Cumulative distribution plot for D. melanogaster contig and scaffold assembly and MinION assembly](https://github.com/mateadjokic/ee282/blob/homework4/output/figures/CDF2.png?raw=true)
 
+**Figure 7: Cumulative distribution plot for D. melanogaster contig and scaffold assembly and MinION assembly.**
 
 #### 3. Calculate BUSCO scores of both assemblies and compare them.
 
@@ -102,3 +113,4 @@ To recreate the contig assembly, `faSplitByN` was used to split the original Fly
 
 ![Figure 8: Dotplot comparison of the FlyBase D. melanogaster contig assembly and the MinION assembly.](https://github.com/mateadjokic/ee282/blob/homework4/output/figures/flybase_unitigs.png?raw=true)
 
+**Figure 8: Dotplot comparison of the FlyBase D. melanogaster contig assembly and the MinION assembly.**
